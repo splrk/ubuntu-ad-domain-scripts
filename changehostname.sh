@@ -53,6 +53,7 @@ else
 	# Modify the /etc/hosts file to include the FQDN accroding to the domain you are joining
 	sed -i -e "s/127\.0\.1\.1\(\s\+\).*$/127.0.1.1\1$HOSTNAME.$DOMAINNAME $HOSTNAME/" /etc/hosts
 fi
+echo "$HOSTNAME" > /etc/hostname
 
 cat /etc/hosts
 
