@@ -1,0 +1,14 @@
+[active-directory]
+os-name = ${OSNAME}
+os-version = ${OSVERSION}
+
+[service]
+automatic-install = yes
+
+[users]
+default-home = ${DEFAULTHOME}
+default-shell = ${DEFAULTSHELL}
+
+[${REALM}]
+user-principal = yes
+fully-qualified-names = no
